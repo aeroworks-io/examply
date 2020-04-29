@@ -27,7 +27,7 @@ const defaultLayout: Layout = {
   title: 'Examply.js',
   header: 'Sample Header',
   description: 'Sample Header',
-  image: 'https://dummyimage.com/1200x630?text=Examply.js',
+  image: `https://placehold.jp/${(1200 / 'Examply.js'.length) * 2}/123456/ffffff/1200x630.png?text=Examply.js`,
 };
 
 const getLayout: (route: Route) => Promise<Layout> = (route: Route) =>
@@ -44,7 +44,8 @@ const getLayout: (route: Route) => Promise<Layout> = (route: Route) =>
   async asyncData(ctx) {
     const { BASE_URL } = ctx.env;
     const layout = await getLayout(ctx.route);
-    const image = `https://dummyimage.com/1200x630/345678?text=${layout.header}%20-%20${layout.title}`;
+    const title = `${layout.header}%20-%20${layout.title}`;
+    const image = `https://placehold.jp/${(1200 / title.length) * 2}/123456/ffffff/1200x630.png?text=${title}`;
 
     return {
       baseUrl: BASE_URL,
