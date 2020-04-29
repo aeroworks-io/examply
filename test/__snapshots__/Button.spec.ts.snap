@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.vue snapshot 1`] = `"<button type=\\"button\\" class=\\"v-btn v-btn--contained theme--light v-size--default\\"><span class=\\"v-btn__content\\">Button</span></button>"`;
