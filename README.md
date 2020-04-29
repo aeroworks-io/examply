@@ -1,16 +1,6 @@
-# nuxt-vercel-template
+# Examply
 
-Nuxt TypeScript (Class Component) Vuetify Project that supports hosting on Vercel
-
-## includes:
-* jest
-* storybook
-* eslint
-* prettier
-
-## nuxt plugins
-* @nuxt/axios
-* 
+Static Site Generator that generates content depending on the url
 
 ## Build Setup
 
@@ -28,5 +18,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
