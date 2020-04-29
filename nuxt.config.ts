@@ -5,7 +5,7 @@ export default {
   mode: 'universal',
   srcDir: 'src',
   env: {
-    BASE_URL: 'http://localhost:3000' || process.env.BASE_URL
+    BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
   /*
    ** Headers of the page
