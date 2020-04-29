@@ -24,6 +24,7 @@
     },
     "types": [
       "@types/node",
+      "@types/webpack",
       "@nuxt/types",
       "vuetify",
       "@types/jest"
@@ -31,7 +32,8 @@
     "experimentalDecorators": true
   },
   "files": [
-    "shims-vue.d.ts"
+    "shims-vue.d.ts",
+    "nuxt.config.ts"
   ],
   "exclude": [
     "node_modules"

@@ -1,13 +1,16 @@
 import colors from 'vuetify/es5/util/colors'
+import { Configuration } from '@nuxt/types/config'
 
 export default {
   mode: 'universal',
   srcDir: 'src',
+  env: {
+    BASE_URL: 'http://localhost:3000' || process.env.BASE_URL
+  },
   /*
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -96,5 +99,14 @@ export default {
   typescript: {
     typeCheck: true,
     ignoreNotFoundWarnings: true
+  },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'fallback',
+        path: '*',
+        component: resolve(__dirname, 'src/pages/index.vue')
+      })
+    }
   }
-}
+} as Configuration
