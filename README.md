@@ -2,9 +2,9 @@
 
 Static Site Generator that generates content depending on the url!
 
-`https://examply.now.sh/<placeholder>/<path>` will generate an dynamic, SSR-ed page with full OGP and Meta tags and so on.
+`https://examply.aeroworks.app/<placeholder>/<path>` will generate an dynamic, SSR-ed page with full OGP and Meta tags and so on.
 
-Try me: [https://examply.now.sh/Examply/Awesome/webapp/it/is](https://examply.now.sh/Examply/Awesome/webapp/it/is)
+Try me: [https://examply.aeroworks.app/Examply/Awesome/webapp/it/is](https://examply.aeroworks.app/Examply/Awesome/webapp/it/is)
 
 Special thanks to placehold.jp!
 
